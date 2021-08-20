@@ -14,8 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-//mongodb+srv://saya:12345@cluster0.hakrd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-// mongodb://localhost/budget
+
 mongoose.connect("mongodb://localhost/budget", {
     useNewUrlParser: true,
     useFindAndModify: false,
