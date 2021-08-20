@@ -16,12 +16,10 @@ app.use(express.json());
 app.use(express.static("public"));
 //mongodb+srv://saya:12345@cluster0.hakrd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 // mongodb://localhost/budget
-mongoose.connect(
-    "mongodb+srv://saya:12345@cluster0.hakrd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
-        useNewUrlParser: true,
-        useFindAndModify: false,
-    }
-);
+mongoose.connect("mongodb://localhost/budget", {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+});
 
 // routes
 app.use(require("./routes/api.js"));
