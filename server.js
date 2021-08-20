@@ -14,15 +14,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+//mongodb+srv://saya:12345@cluster0.hakrd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+// mongodb://localhost/budget
+mongoose.connect(
+    "mongodb+srv://saya:12345@cluster0.hakrd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+        useNewUrlParser: true,
+        useFindAndModify: false,
+    }
+);
 
 // routes
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
+    console.log(`App running on port ${PORT}!`);
 });
