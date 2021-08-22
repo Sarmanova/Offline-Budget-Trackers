@@ -4,7 +4,7 @@
 
 ## Deployed
 
-  Link: https://offline-budget-tracker1993.herokuapp.com/
+  Link: https://budget-trackers1993.herokuapp.com/
 
   
 ## Acceptance Criteria
@@ -12,7 +12,9 @@
   WHEN the user inputs a withdrawal or deposit
   THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 
+## Screenshot
 
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/711/original/saya35.JPG?1629598612" width=500>
 
 
 ## License
